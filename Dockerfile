@@ -27,7 +27,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   libxmlrpc-core-c3-dev \
   make \
   markdown \
-  pandoc
+  pandoc \
+  libnftnl-dev \
+  libmnl-dev
 
 WORKDIR /usr/src
 RUN git clone https://github.com/sipwise/rtpengine
